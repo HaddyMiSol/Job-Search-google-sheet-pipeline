@@ -1,5 +1,5 @@
 function fetchAndLogJobs() {
-  var spreadsheet = SpreadsheetApp.openById("1bbN5Dv0xV3qgU_CrI2wS_whTJOVQKkRvf1ALJLv2EUs");
+  var spreadsheet = SpreadsheetApp.openById("REPLACE_WITH_SPREADSHEET_ID");
   var sheet = spreadsheet.getActiveSheet();
 
   var existingData = sheet.getDataRange().getValues();
@@ -13,7 +13,7 @@ function fetchAndLogJobs() {
   oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1); // 1-month threshold
 
   // --- SOURCE 1: JSearch ---
-  var apiKey = "f4df9eaad8msh3435a0b637ca600p1dc05ejsnf3c76b0bf9a2";
+  var apiKey = "REPLACE_WITH_YOUR_JSEARCH_XRAPIDKEY";
   var queries = [
     "Data Analyst remote hybrid Nigeria",
     "Analytics Engineer remote",
