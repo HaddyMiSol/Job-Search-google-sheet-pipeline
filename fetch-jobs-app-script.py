@@ -13,7 +13,7 @@ function fetchAndLogJobs() {
   oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1); // 1-month threshold
 
   // --- SOURCE 1: JSearch ---
-  var apiKey = "REPLACE_WITH_YOUR_JSEARCH_XRAPIDKEY";
+  var apiKey = "REPLACE_WITH_YOUR_JSEARCH_XRAPIDAPIKEY";
   var queries = [
     "Data Analyst remote hybrid Nigeria",
     "Analytics Engineer remote",
