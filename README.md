@@ -49,8 +49,8 @@ A serverless data pipeline built with **Google Apps Script** and **Google Sheets
 * Set up your header row with the following columns:
   * `Col A`: Job Title
   * `Col B`: Company
-  * `Col C`: Remote / Hybrid
-  * `Col D`: Location
+  * `Col C`: Location Type
+  * `Col D`: Country/Region
   * `Col E`: Date Posted
   * `Col F`: Application Link
 
