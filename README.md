@@ -64,7 +64,7 @@ A serverless data pipeline built with **Google Apps Script** and **Google Sheets
 * Go to https://app.openwebninja.com/ and sign in for free
 * Click on JSearch API under the Explore API section and select the Basic Plan
 * On the left side bar, select JSearch under Active APIs
-* Click on the Documentation tab and you will see 'x-API key' which is your RapidAPI key.
+* Click on the Playground tab and you will see 'x-API key' which is your RapidAPI key.
 ```
 
 
