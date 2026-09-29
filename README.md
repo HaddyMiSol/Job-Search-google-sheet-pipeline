@@ -61,10 +61,10 @@ A serverless data pipeline built with **Google Apps Script** and **Google Sheets
 * Insert your RapidAPI key for JSearch into the `apiKey` variable (REPLACE_WITH_YOUR_JSEARCH_XRAPIDAPIKEY). See how to get the RapidAPI key for JSearch below;
 
 ```text
-* Go to https://app.openwebninja.com/ and sign in for free
-* Click on JSearch API under the Explore API section and select the Basic Plan
-* On the left side bar, select JSearch under Active APIs
-* Click on the Playground tab and you will see 'x-API key' which is your RapidAPI key.
+* Go to https://rapidapi.com/hub and sign in for free
+* In the search bar, search for JSearch API and click on the first one, then subscribe to the Basic Plan
+* Select 'Subscribe to Run' tab in the new interface and then run.
+* Under the Request tab, click Headers, you will see 'x-API key' which is your RapidAPI key.
 ```
 
 
