@@ -55,10 +55,18 @@ A serverless data pipeline built with **Google Apps Script** and **Google Sheets
   * `Col F`: Application Link
 
 ### 2. Configure the Google Apps Script
-* In your Google Sheet, click on **Extensions** > **Apps Script**.
+* In your Google Sheet, click on **Extensions** > **Apps Script** or paste this in your search bar; 'https://script.google.com/home'.
 * Delete any placeholder code and paste the pipeline script into the editor.
 * Replace `"REPLACE_WITH_SPREADSHEET_ID"` with your actual Google Sheet ID (found in your sheet's URL between `/d/` and `/edit`).
-* Insert your RapidAPI key for JSearch into the `apiKey` variable (REPLACE_WITH_YOUR_JSEARCH_XRAPIDAPIKEY).
+* Insert your RapidAPI key for JSearch into the `apiKey` variable (REPLACE_WITH_YOUR_JSEARCH_XRAPIDAPIKEY). See how to get the RapidAPI key for JSearch below;
+
+```text
+* Go to https://app.openwebninja.com/ and sign in for free
+* Click on JSearch API under the Explore API section and select the Basic Plan
+* On the left side bar, select JSearch under Active APIs
+* Click on the Documentation tab and you will see 'x-API key' which is your RapidAPI key.
+```
+
 
 ### 3. Set Up Daily Automation
 * In the Apps Script sidebar, click the **Clock icon (Triggers)**.
@@ -66,6 +74,19 @@ A serverless data pipeline built with **Google Apps Script** and **Google Sheets
 * Choose `fetchAndLogJobs` as the function to run.
 * Set the event source to **Time-driven** and choose a **Day timer** interval.
 * Click **Save**.
+
+### 4. Setup for other job roles
+* Edit the code section below of the App Script to the job role you are searching for
+```text
+  var isDataAnalyst = lowerTitle.includes("data analyst") || lowerTitle.includes("bi analyst") || lowerTitle.includes("business intelligence");
+  var isAnalyticsEng = lowerTitle.includes("analytics engineer");
+  var isDataEng = lowerTitle.includes("data engineer");
+  var isDataSpecialist = lowerTitle.includes("data specialist");
+  var isVisSpecialist = lowerTitle.includes("visualization") || lowerTitle.includes("tableau") || lowerTitle.includes("power bi");
+
+  var isTargetRole = isDataAnalyst || isAnalyticsEng || isDataEng || isDataSpecialist || isVisSpecialist;
+```
+
 
 ---
 
