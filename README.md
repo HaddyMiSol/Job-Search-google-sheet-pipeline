@@ -77,6 +77,18 @@ A serverless data pipeline built with **Google Apps Script** and **Google Sheets
 
 ### 4. Setup for other job roles
 * Edit the code section below of the App Script to the job role you are searching for
+
+```text
+// --- SOURCE 1: JSearch ---
+  var apiKey = "REPLACE_WITH_YOUR_JSEARCH_XRAPIDAPIKEY";
+  var queries = [
+    "Data Analyst remote hybrid Nigeria",
+    "Analytics Engineer remote",
+    "Data Engineer entry level remote"
+  ];
+```
+
+
 ```text
   var isDataAnalyst = lowerTitle.includes("data analyst") || lowerTitle.includes("bi analyst") || lowerTitle.includes("business intelligence");
   var isAnalyticsEng = lowerTitle.includes("analytics engineer");
