@@ -55,7 +55,7 @@ A serverless data pipeline built with **Google Apps Script** and **Google Sheets
   * `Col F`: Application Link
 
 ### 2. Configure the Google Apps Script
-* In your Google Sheet, click on **Extensions** > **Apps Script** or paste this in your search bar; 'https://script.google.com/home'.
+* In your Google Sheet, click on **Extensions** > **Apps Script** or paste this in your browser -> https://script.google.com/home.
 * Delete any placeholder code and paste the pipeline script into the editor.
 * Replace `"REPLACE_WITH_SPREADSHEET_ID"` with your actual Google Sheet ID (found in your sheet's URL between `/d/` and `/edit`).
 * Insert your RapidAPI key for JSearch into the `apiKey` variable (REPLACE_WITH_YOUR_JSEARCH_XRAPIDAPIKEY). See how to get the RapidAPI key for JSearch below;
